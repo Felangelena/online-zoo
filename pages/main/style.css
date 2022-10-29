@@ -1,0 +1,102 @@
+:root {
+    --bg-dark: #000;
+    --header-text: #fff;
+    --header-hover: orange;
+    --text-color: #333B41;
+}
+
+.red {
+    border: solid 2px red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    background: var(--bg-dark);
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 52px;
+    color: var(--header-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    border: 1px solid #FFF;
+    background-image: url('../../assets/icons/bamboo.png');
+    background-size: 7px 20px;
+    background-repeat: no-repeat;
+    background-position: 14px 23px;
+}
+
+.header-container {
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 63px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 472px;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: var(--header-text);
+    transition: .3s;
+}
+
+.nav-item.active {
+    color: var(--header-hover);
+}
+
+.nav-item:hover {
+    color: var(--header-hover);
+}
+
+.designed {
+    margin-left: auto;
+}
