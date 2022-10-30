@@ -1,0 +1,349 @@
+:root {
+    --bg-dark: #000;
+    --text-white: #fff;
+    --orange-red: #F9804B;
+    --orange: #FE9013;
+    --yellow: #FFEE2E;
+    --green: #4B9200;
+    --text-color: #333B41;
+    --text-black: #000;
+    --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --orange-gradient-hover: linear-gradient(113.96deg, #FE9013 1.49%, #FE9013 101.44%);
+}
+
+.red {
+    border: solid 2px red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    background: var(--bg-dark);
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 52px;
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 115%;
+    text-align: center;
+    border: 1px solid #FFF;
+    background-image: url('../../assets/icons/bamboo.svg');
+    background-size: 7px 20px;
+    background-repeat: no-repeat;
+    background-position: 11px 23px;
+}
+
+.header-container {
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 63px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 472px;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: var(--text-white);
+    transition: .3s;
+}
+
+.nav-item.active {
+    color: var(--orange-red);
+}
+
+.nav-item:hover {
+    color: var(--orange-red);
+}
+
+.nav-item:active {
+    color: var(--green);
+}
+
+.designed {
+    margin-left: auto;
+}
+
+.container-watch {
+    padding-top: 12px;
+    height: 700px;
+    background-image: url('../../assets/images/panda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -80px;
+}
+
+.watch-circle {
+    margin-left: calc(50% + 7px);
+    width: 465px;
+    height: 465px;
+    border-radius: 100%;
+    background: var(--orange-gradient);
+}
+.watch-moto {
+    padding-top: 74px;
+    padding-left: 84px;
+    width: 560px;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.watch-moto-yellow {
+    color: var(--yellow);
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    font-family: inherit;
+    overflow: hidden;
+    transition: all .5s;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-white);
+    background: var(--orange-gradient);
+}
+
+.btn:hover {
+    background: var(--orange-gradient-hover);
+}
+
+.btn:active {
+    background: var(--green);
+}
+
+.watch-btn {
+    margin-top: 69px;
+    margin-left: calc(50% + 185px);
+}
+
+.backstage {
+    position: relative;
+    padding-top: 140px;
+    height: 665px;
+}
+
+.container-backstage {
+    display: grid;
+    grid-template-columns: 609px 1fr;
+    gap: 87px;
+}
+
+.container-backstage-item>img {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--text-color);
+}
+
+.backstage-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 132%;
+    color: var(--text-color);
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+
+.backstage-text1 {
+    padding-top: 22px;
+}
+
+.backstage-subtitle {
+    padding-top: 54px;
+}
+
+.backstage-text2 {
+    padding-top: 34px;
+}
+
+.backstage-photo {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 203px;
+    height: 609px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/flower.png');
+}
+
+.pets {
+    position: relative;
+    padding-top: 58px;
+    height: 1165px;
+}
+
+.pets-grid {
+    position: relative;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    grid-template-rows: repeat(2, 426px);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.scroll {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 62px);
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    background: var(--orange-gradient);
+}
+
+.scroll:hover {
+    background: var(--orange);
+}
+
+.scroll:active {
+    background: var(--green);
+}
+
+.scroll-left{
+    left: -82px;
+}
+
+.scroll-right{
+    right: -82px;
+}
+
+.container-pets-item {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #FA6F32, #FE9013) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.pets-img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.pets-info {
+    padding-top: 8px;
+    padding-left: 16px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.pets-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--text-black);
+}
+
+.pets-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: var(--text-black);
+}
+
+.pets-icon {
+    margin-right: 10px;
+}
+
+.btn-pets {
+    margin-left: calc(50% - 298px/2);
+    margin-bottom: 100px;
+}
+
+.pets-photo-palm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 290px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/palm.png');
+}
+
+.pets-photo-strelitzia {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 368px;
+    height: 275px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/strelitzia.png');
+}
