@@ -1,8 +1,10 @@
 :root {
     --bg-dark: #000;
-    --header-text: #fff;
-    --header-hover: orange;
+    --text-white: #fff;
+    --orange: #F9804B;
+    --yellow: #FFEE2E;
     --text-color: #333B41;
+    --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
 .red {
@@ -55,16 +57,16 @@ h1 {
     align-items: center;
     width: 82px;
     height: 52px;
-    color: var(--header-text);
+    color: var(--text-white);
     font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
+    font-size: 19px;
+    line-height: 115%;
     text-align: center;
     border: 1px solid #FFF;
-    background-image: url('../../assets/icons/bamboo.png');
+    background-image: url('../../assets/icons/bamboo.svg');
     background-size: 7px 20px;
     background-repeat: no-repeat;
-    background-position: 14px 23px;
+    background-position: 11px 23px;
 }
 
 .header-container {
@@ -85,18 +87,78 @@ h1 {
 
 .nav-item {
     font-size: 16px;
-    color: var(--header-text);
+    color: var(--text-white);
     transition: .3s;
 }
 
 .nav-item.active {
-    color: var(--header-hover);
+    color: var(--orange);
 }
 
 .nav-item:hover {
-    color: var(--header-hover);
+    color: var(--orange);
 }
 
 .designed {
     margin-left: auto;
+}
+
+.watch-container {
+    padding-top: 12px;
+    height: 700px;
+    background-image: url('../../assets/images/panda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -80px;
+}
+
+.watch-circle {
+    margin-left: calc(50% + 7px);
+    width: 465px;
+    height: 465px;
+    border-radius: 100%;
+    background: var(--orange-gradient);
+}
+.watch-moto {
+    padding-top: 74px;
+    padding-left: 84px;
+    width: 560px;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.watch-moto-yellow {
+    color: var(--yellow);
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    font-family: inherit;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background: #E47209;
+}
+
+.watch-btn {
+    margin-top: 69px;
+    margin-left: calc(50% + 185px);
+    color: var(--text-white);
+    background: var(--orange-gradient);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
 }
