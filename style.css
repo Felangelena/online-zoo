@@ -127,6 +127,7 @@ h1 {
     border-radius: 100%;
     background: var(--orange-gradient);
 }
+
 .watch-moto {
     padding-top: 74px;
     padding-left: 84px;
@@ -282,10 +283,40 @@ h2 {
 }
 
 .container-pets-item {
+    position: relative;
     background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #FA6F32, #FE9013) border-box;
     border-radius: 5px;
     border: 1px solid transparent;
+}
+
+.container-pets-item:hover .pets-img-tooltip {
+    transition: .3s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.container-pets-item:hover img.pets-img {
+    filter: brightness(40%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.pets-img-tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
 }
 
 .pets-img {
@@ -323,8 +354,11 @@ h2 {
     margin-right: 10px;
 }
 
+.btn-center {
+    text-align: center;
+}
+
 .btn-pets {
-    margin-left: calc(50% - 298px/2);
     margin-bottom: 100px;
 }
 
@@ -346,4 +380,240 @@ h2 {
     height: 275px;
     background-repeat: no-repeat;
     background-image: url('assets/images/strelitzia.png');
+}
+
+.container-pick {
+    height: 1004px;
+    padding-top: 69px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.pick-frame {
+    height: 835px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.pick-title {
+    padding-top: 41px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--orange);
+}
+
+.pick-text1 {
+    padding-top: 30px;
+    padding-left: 99px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.pick-text2 {
+    padding-top: 40px;
+    padding-left: 99px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.pick-text3 {
+    width: 863px;
+    padding-top: 10px;
+    padding-left: 99px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.pick-subtitle {
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.pick-grid {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 764px;
+    display: grid;
+    grid-template-columns: 168px 130px 168px 130px 168px;
+    grid-template-rows: 244px;
+}
+
+.pick-grid-item-img {
+    width: 168px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #FA6F32, #FE9013) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.pick-grid-item-info {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.pick-grid-arrow {
+    background-size: 69px 35px;
+    background-position: center 67px;
+    background-repeat: no-repeat;
+    background-image: url('assets/icons/arrow.svg');
+}
+
+.btn-center {
+    text-align: center;
+}
+
+.container-testimonials {
+    position: relative;
+    height: 920px;
+    padding-top: 140px;
+}
+
+.testimonials-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.testimonials-grid {
+    padding-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(4, 268px);
+    column-gap: 30px;
+}
+
+.testimonials-grid-item {
+    padding-left: 16px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 268px;
+    min-height: 391px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(#F1F3F2, #F1F3F2) padding-box,
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.feedback-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.feedback-ava {
+    width: 37px;
+    height: 37px;
+}
+
+.feedback-header-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+}
+
+.client-location {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.feedback-text {
+    margin-top: 10px;
+}
+
+.feedback-text-p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
+}
+
+.progres-bar-box {
+    margin-top: 21px;
+    text-align: center;
+}
+
+.progres-bar {
+    width: 599px;
+    height: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #F5F7F6 52%, #F5F7F6 25%, #F5F7F6 0%, #F5F7F6 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid #FEBDAB;
+}
+
+.progres-bar::-moz-range-track {
+    width: 0;
+    height: 0;
+}
+
+.progres-bar::-webkit-slider-runnable-track {
+    width: 0;
+    height: 0;
+}
+
+.progres-bar::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+.progres-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    transform: translateY(-25%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 2px solid #FE9013;
+    background-color: #F5F7F6;
+}
+
+.progres-bar::-moz-range-progress {
+    border: 2px solid #FE9013;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #FE9013;
+}
+
+.btn-testimonials {
+    margin-top: 31px;
+    margin-bottom: 180px;
+}
+
+.testimonials-photo-leave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-image: url('assets/images/leav.png');
 }
