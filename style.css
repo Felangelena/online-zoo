@@ -572,41 +572,34 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     -webkit-appearance: none;
-    background: linear-gradient(to right, #F5F7F6 52%, #F5F7F6 25%, #F5F7F6 0%, #F5F7F6 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to right, var(--orange) 0%, var(--orange) 25%, #F5F7F6 0%, #F5F7F6 100%);
     border: 1px solid #FEBDAB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .progres-bar::-moz-range-track {
-    width: 0;
-    height: 0;
+    height: 6px;
+    border-radius: 5px;
 }
 
 .progres-bar::-webkit-slider-runnable-track {
-    width: 0;
-    height: 0;
+    height: 6px;
+    border-radius: 5px;
 }
 
 .progres-bar::-moz-range-thumb {
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .progres-bar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    transform: translateY(-25%);
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    border: 2px solid #FE9013;
-    background-color: #F5F7F6;
+    display: none;
 }
 
 .progres-bar::-moz-range-progress {
-    border: 2px solid #FE9013;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-color: #FE9013;
+    border: 2px solid var(--orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--orange);
 }
 
 .btn-testimonials {
@@ -633,7 +626,7 @@ h2 {
     padding-top: 38px;
     display: grid;
     grid-template-columns: 350px 420px 393px;
-    grid-template-rows: 120px 100px 193px;
+    grid-template-rows: 120px 100px 180px;
     grid-template-areas:
         "logo logo subscribe"
         "donate donate donate"
