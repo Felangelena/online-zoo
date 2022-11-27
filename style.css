@@ -189,9 +189,12 @@ h1 {
     gap: 87px;
 }
 
-.container-backstage-item>img {
-    display: block;
+.backstage-item-img {
+    height: 405px;
     width: 100%;
+    background-image: url('assets/images/bamboo_cap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -507,7 +510,6 @@ h2 {
     padding-left: 16px;
     padding-right: 15px;
     padding-top: 12px;
-    width: 268px;
     min-height: 391px;
     display: flex;
     flex-direction: column;
@@ -779,4 +781,203 @@ h2 {
     font-size: 16px;
     line-height: 130%;
     color: #FFF;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .nav-list {
+        width: 431px;
+    }
+
+    .container-watch {
+        position: relative;
+        padding-top: 0;
+        height: 584px;
+    }
+
+    .watch-circle {
+        position: relative;
+        top: -10px;
+        margin-left: calc(50% + -44px);
+        width: 367px;
+        height: 367px;
+    }
+
+    .watch-circle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: 0;
+        background-color: #000;
+    }
+
+    .watch-moto {
+        padding-top: 52px;
+        padding-left: 56px;
+        width: 460px;
+        font-size: 85px;
+    }
+
+    .watch-btn {
+        margin-top: 35px;
+        margin-left: calc(50% + 67px);
+    }
+
+    .backstage {
+        padding-top: 30px;
+        height: 531px;
+    }
+
+    .container-backstage {
+        grid-template-columns: 455px 1fr;
+        gap: 31px;
+    }
+
+    .backstage-item-img {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .backstage-photo {
+        display: none;
+    }
+
+    h2 {
+        margin-top: -10px;
+    }
+
+    .scroll-left {
+        left: calc(50% - 147px);
+    }
+
+    .scroll-right {
+        right: calc(50% - 147px);
+    }
+
+    .pets {
+        height: 1133px;
+    }
+
+    .pets-grid {
+        padding-bottom: 80px;
+        grid-template-columns: repeat(3, 294px);
+        grid-template-rows: repeat(2, 354px);
+        row-gap: 92px;
+        column-gap: 30px;
+    }
+
+    .pets-photo-palm {
+        width: 194px;
+        height: 202px;
+        background-image: url(assets/images/palm_small-desc.png);
+    }
+
+    .pets-photo-strelitzia {
+        width: 241px;
+        height: 180px;
+        background-image: url(assets/images/strelitzia_small-desc.png);
+    }
+
+    .container-pick {
+        height: 876px;
+        padding-top: 30px;
+    }
+
+    .pick-frame {
+        height: 796px;
+    }
+
+    .pick-title {
+        padding-top: 30px;
+    }
+
+    .pick-text1 {
+        padding-top: 21px;
+        padding-left: 49px;
+    }
+
+    .pick-text2 {
+        padding-top: 21px;
+        padding-left: 49px;
+        width: 850px;
+    }
+
+    .pick-text3 {
+        padding-left: 49px;
+        width: 850px;
+    }
+
+    .pick-subtitle {
+        padding-top: 39px;
+    }
+
+    .pick-grid {
+        padding-bottom: 70px;
+    }
+
+    .container-testimonials {
+        height: 842px;
+        padding-top: 100px;
+    }
+
+    .testimonials-grid {
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 293px);
+        column-gap: 30px;
+    }
+
+    .testimonials-grid-item:nth-child(2) {
+        display: none;
+    }
+
+    .progres-bar {
+        width: 390px;
+    }
+
+    .btn-testimonials {
+        margin-top: 48px;
+    }
+
+    .testimonials-photo-leave {
+        width: 121px;
+        height: 211px;
+        background-image: url(assets/images/leav_small-desc.png);
+    }
+
+    .footer-grid {
+        padding-top: 38px;
+        grid-template-columns: 250px 250px 230px 210px;
+        grid-template-rows: 123px 98px 134px;
+        grid-template-areas:
+            "logo logo subscribe subscribe"
+            "donate donate donate donate"
+            "social nav nav rights";
+    }
+
+    .subscribe {
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+
+    .footer-btn {
+        margin-left: 6px;
+    }
+
+    .nav-list {
+        width: 332px;
+    }
+
+    .footer-nav {
+        margin-left: 20px;
+    }
+
+    .rights {
+        margin-top: 83px;
+        margin-left: -20px;
+    }
+
 }
