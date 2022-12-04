@@ -75,6 +75,7 @@ h1 {
 }
 
 .header-container {
+    position: relative;
     padding-top: 14px;
     display: flex;
     align-items: center;
@@ -110,6 +111,10 @@ h1 {
 
 .designed {
     margin-left: auto;
+}
+
+.hamburger {
+    display: none;
 }
 
 .container-watch {
@@ -189,9 +194,12 @@ h1 {
     gap: 87px;
 }
 
-.container-backstage-item>img {
-    display: block;
+.backstage-item-img {
+    height: 405px;
     width: 100%;
+    background-image: url('assets/images/bamboo_cap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -430,6 +438,12 @@ h2 {
     line-height: 130%;
 }
 
+.pets-fund {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+}
+
 .pick-subtitle {
     padding-top: 60px;
     text-align: center;
@@ -475,8 +489,11 @@ h2 {
 }
 
 .pick-grid-arrow img {
-    display: block;
     width: 69px;
+}
+
+.arrow2 {
+    display: none;
 }
 
 .btn-center {
@@ -507,7 +524,6 @@ h2 {
     padding-left: 16px;
     padding-right: 15px;
     padding-top: 12px;
-    width: 268px;
     min-height: 391px;
     display: flex;
     flex-direction: column;
@@ -780,3 +796,590 @@ h2 {
     line-height: 130%;
     color: #FFF;
 }
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .nav-list {
+        width: 431px;
+    }
+
+    .container-watch {
+        position: relative;
+        padding-top: 0;
+        height: 584px;
+    }
+
+    .watch-circle {
+        position: relative;
+        top: -10px;
+        margin-left: calc(50% + -44px);
+        width: 367px;
+        height: 367px;
+    }
+
+    .watch-circle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: 0;
+        background-color: #000;
+    }
+
+    .watch-moto {
+        padding-top: 52px;
+        padding-left: 56px;
+        width: 460px;
+        font-size: 85px;
+    }
+
+    .watch-btn {
+        margin-top: 35px;
+        margin-left: calc(50% + 67px);
+    }
+
+    .backstage {
+        padding-top: 30px;
+        height: 531px;
+    }
+
+    .container-backstage {
+        grid-template-columns: 455px 1fr;
+        gap: 31px;
+    }
+
+    .backstage-item-img {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .backstage-photo {
+        display: none;
+    }
+
+    h2 {
+        margin-top: -10px;
+    }
+
+    .scroll-left {
+        left: calc(50% - 147px);
+    }
+
+    .scroll-right {
+        right: calc(50% - 147px);
+    }
+
+    .pets {
+        height: 1133px;
+    }
+
+    .pets-grid {
+        padding-bottom: 80px;
+        grid-template-columns: repeat(3, 294px);
+        grid-template-rows: repeat(2, 354px);
+        row-gap: 92px;
+        column-gap: 30px;
+    }
+
+    .pets-photo-palm {
+        width: 194px;
+        height: 202px;
+        background-image: url(assets/images/palm_small-desc.png);
+    }
+
+    .pets-photo-strelitzia {
+        width: 241px;
+        height: 180px;
+        background-image: url(assets/images/strelitzia_small-desc.png);
+    }
+
+    .container-pick {
+        height: 876px;
+        padding-top: 30px;
+    }
+
+    .pick-frame {
+        height: 796px;
+    }
+
+    .pick-title {
+        padding-top: 30px;
+    }
+
+    .pick-text1 {
+        padding-top: 21px;
+        padding-left: 49px;
+    }
+
+    .pick-text2 {
+        padding-top: 21px;
+        padding-left: 49px;
+        width: 850px;
+    }
+
+    .pick-text3 {
+        padding-left: 49px;
+        width: 850px;
+    }
+
+    .pick-subtitle {
+        padding-top: 39px;
+    }
+
+    .pick-grid {
+        padding-bottom: 70px;
+    }
+
+    .container-testimonials {
+        height: 842px;
+        padding-top: 100px;
+    }
+
+    .testimonials-grid {
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 293px);
+        column-gap: 30px;
+    }
+
+    .testimonials-grid-item:nth-child(2) {
+        display: none;
+    }
+
+    .progres-bar {
+        width: 390px;
+    }
+
+    .btn-testimonials {
+        margin-top: 48px;
+    }
+
+    .testimonials-photo-leave {
+        width: 121px;
+        height: 211px;
+        background-image: url(assets/images/leav_small-desc.png);
+    }
+
+    .footer-grid {
+        padding-top: 38px;
+        grid-template-columns: 250px 250px 230px 210px;
+        grid-template-rows: 123px 98px 134px;
+        grid-template-areas:
+            "logo logo subscribe subscribe"
+            "donate donate donate donate"
+            "social nav nav rights";
+    }
+
+    .subscribe {
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+
+    .footer-btn {
+        margin-left: 6px;
+    }
+
+    .nav-list {
+        width: 332px;
+    }
+
+    .footer-nav {
+        margin-left: 20px;
+    }
+
+    .rights {
+        margin-top: 83px;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .header {
+        height: 34px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-container {
+        padding-top: 2px;
+    }
+
+    .logo {
+        width: 47px;
+        height: 29px;
+        border: none;
+        font-size: 12px;
+        background-size: 7px 20px;
+        background-repeat: no-repeat;
+        background-position: 3px 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .designed {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 11px;
+        width: 18px;
+        height: 10px;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 2px;
+        border-radius: 2px;
+        transition: .5s all;
+    }
+
+    .hamburger-active {
+        display: none;
+    }
+
+    .header-container-active {
+        z-index: 1;
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: #fff;
+        transition: 0.6 all;
+    }
+
+    .header-container-active .logo {
+        width: 66px;
+        height: 42px;
+        padding: 3px;
+        font-size: 15.2116px;
+        line-height: 120%;
+        color: var(--orange);
+        background-image: url(assets/icons/bamboo-org.svg);
+        background-size: 10px 20px;
+        background-position: 6px 16px;
+        border: 1px solid var(--orange);
+    }
+
+    .header-container-active .nav {
+        display: block;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .header-container-active .nav-list {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container-active .nav-item, .header-container-active .nav-item.active {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .header-container-active .designed {
+        display: block;
+        color: var(--text-color);
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .container-watch {
+        height: 339px;
+        background-image: url(assets/images/panda_tablet.jpg);
+        background-position: center -34px;
+    }
+
+    .watch-circle {
+        top: 10px;
+        margin-left: calc(50% + 10px);
+        width: 237px;
+        height: 237px;
+    }
+
+    .watch-circle::before {
+        display: none;
+    }
+
+    .watch-moto {
+        padding-top: 40px;
+        padding-left: 44px;
+        width: 288px;
+        font-size: 54px;
+        line-height: 75%;
+    }
+
+    .watch-btn {
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    .backstage-item-img {
+        display: none;
+    }
+
+    .backstage-photo {
+        display: block;
+    }
+
+    .backstage {
+        padding-top: 60px;
+        height: 507px;
+    }
+
+    .container-backstage {
+        grid-template-columns: 495px;
+        gap: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-left: 5px;
+    }
+
+    .backstage-subtitle {
+        padding-top: 30px;
+        padding-left: 4px;
+    }
+
+    .backstage-text2 {
+        padding-top: 20px;
+    }
+
+    .backstage-photo {
+        top: -5px;
+        width: 132px;
+        height: 484px;
+        background-image: url(assets/images/flower_tablet.png);
+    }
+
+    .pets {
+        padding-top: 0;
+        height: 970px;
+    }
+
+    .scroll-left {
+        left: calc(50% - 77px);
+    }
+
+    .scroll-right {
+        right: calc(50% - 77px);
+    }
+
+    .pets-grid {
+        padding-bottom: 60px;
+        grid-template-columns: repeat(2, 285px);
+        grid-template-rows: repeat(2, 332px);
+        row-gap: 92px;
+    }
+
+    .container-pets-item:nth-child(5) {
+        display: none;
+    }
+
+    .container-pets-item:nth-child(6) {
+        display: none;
+    }
+
+    .pets-info {
+        padding-left: 11px;
+    }
+
+    .pets-title {
+        font-size: 13px;
+    }
+
+    .pets-text {
+        font-size: 11px;
+    }
+
+    .pets-icon {
+        width: 85%;
+        margin-right: -5px;
+    }
+
+    .pets-photo-palm {
+        width: 134px;
+        height: 202px;
+        background-image: url(assets/images/palm_tablet.png);
+    }
+
+    .pets-photo-strelitzia {
+        width: 175px;
+        height: 131px;
+        background-image: url(assets/images/strelitzia_tablet.png);
+    }
+
+    .container-pick {
+        height: 781px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pick-frame.container {
+        max-width: 640px;
+    }
+
+    .pick-title {
+        padding-top: 10px;
+        font-size: 42px;
+    }
+
+    .pick-text1 {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 22px;
+    }
+
+    .pick-text2 {
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 620px;
+    }
+
+    .pick-text3 {
+        padding-left: 20px;
+        width: 620px;
+    }
+
+    .pick-subtitle {
+        padding-top: 30px;
+    }
+
+    .pick-grid {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 600px;
+        grid-template-columns: 168px 42px 168px 42px 168px;
+    }
+
+    .pick-grid-arrow img {
+        width: 89px;
+    }
+
+    .arrow1 {
+        display: none;
+    }
+
+    .arrow2 {
+        display: block;
+        position: relative;
+        top: -75px;
+        left: -10px;
+    }
+
+    .container-testimonials {
+        height: 668px;
+        padding-top: 60px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 109px);
+        column-gap: 0;
+        row-gap: 15px;
+    }
+
+    .testimonials-grid-item {
+        overflow: hidden;
+        padding-left: 12px;
+        padding-right: 29px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        min-height: 109px;
+    }
+
+    .progres-bar {
+        display: none;
+    }
+
+    .btn-testimonials {
+        display: block;
+        margin: 40px auto 0 auto;
+        width: 240px;
+    }
+
+    .testimonials-photo-leave {
+        width: 67px;
+        height: 116px;
+        background-image: url(assets/images/leav_tablet.png);
+    }
+
+    .footer {
+        height: 282px;
+    }
+
+    .footer-grid {
+        padding-top: 13px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 83px 40px 90px;
+        grid-template-areas:
+            "logo social"
+            "donate social"
+            "nav rights";
+    }
+
+    .footer-logo>.logo {
+        width: 82px;
+        height: 52px;
+        font-size: 19px;
+        background-size: 11px 20px;
+        background-position: 11px 21px;
+        border: 1px solid #FFF;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .social-item {
+        width: 26px;
+        margin-bottom: 20px;
+        align-items: end;
+    }
+
+    .social-item-text {
+        display: none;
+    }
+
+    .social-item-ico {
+        margin-right: 0;
+    }
+
+    .footer-nav {
+        margin-top: 57px;
+        margin-left: 0;
+        width: 300px;
+    }
+
+    .rights {
+        margin-top: 83px;
+        margin-left: auto;
+    }
+}
+
