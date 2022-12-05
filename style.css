@@ -1383,3 +1383,253 @@ h2 {
     }
 }
 
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .container-watch {
+        height: 187px;
+        background-image: url(assets/images/panda_mobile.jpg);
+        background-position: center;
+    }
+
+    .watch-circle {
+        top: 22px;
+        margin-left: calc(50% + 3px);
+        width: 119px;
+        height: 119px;
+    }
+
+    .watch-moto {
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 145px;
+        font-size: 28px;
+        line-height: 21px;
+    }
+
+    .watch-btn {
+        margin-top: 88px;
+    }
+
+    .backstage {
+        padding-top: 99px;
+        height: 507px;
+    }
+
+    .container-backstage {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        margin-top: 5px;
+        margin-left: 0px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .backstage-text1 {
+        padding-top: 10px;
+        padding-left: 2px;
+    }
+
+    .backstage-subtitle {
+        padding-top: 20px;
+        padding-left: 2px;
+    }
+
+    .backstage-text2 {
+        padding-top: 10px;
+        line-height: 136%;
+    }
+
+    .backstage-photo {
+        top: 38px;
+        width: 35px;
+        height: 225px;
+        background-image: url(assets/images/flower_mobile.png);
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .pets {
+        padding-top: 25px;
+        height: 1547px;
+    }
+
+    .pets-grid {
+        padding-bottom: 20px;
+        grid-template-columns: repeat(1, 292px);
+        grid-template-rows: repeat(4, 332px);
+        row-gap: 20px;
+        column-gap: 0;
+    }
+
+    .container-pets-item {
+        margin-left: 6px;
+    }
+
+    .pets-photo-palm {
+        width: 58px;
+        height: 72px;
+        background-image: url(assets/images/palm_mobile.png);
+    }
+
+    .pets-photo-strelitzia {
+        width: 68px;
+        height: 68px;
+        background-image: url(assets/images/strelitzia_mobile.png);
+    }
+
+    .container-pick {
+        height: 1082px;
+    }
+
+    .pick-frame.container {
+        max-width: 300px;
+    }
+
+    .pick-frame {
+        height: 1042px;
+    }
+
+    .pick-title {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    .pick-text1 {
+        padding-top: 10px;
+        padding-left: 0;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .pick-text2, .pick-text3 {
+        display: none;
+    }
+
+    .pick-subtitle {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    .pick-grid {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 300px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 222px 20px 222px 28px 222px;
+    }
+
+    .pick-grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pick-grid-item-info {
+        padding-top: 10px;
+        width: 168px;
+        text-align: left;
+    }
+
+    .pick-grid-arrow {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .arrow2 {
+        display: block;
+        position: relative;
+        transform: rotate(90deg);
+        top: -30px;
+        left: 100px;
+    }
+
+    .container-testimonials {
+        height: 580px;
+        padding-top: 30px;
+    }
+
+    .testimonials-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .testimonials-grid {
+        padding-top: 20px;
+    }
+
+    .testimonials-grid-item {
+        padding-top: 8px;
+    }
+
+    .btn-testimonials {
+        margin-top: 30px;
+    }
+
+    .testimonials-photo-leave {
+        width: 36px;
+        height: 61px;
+        background-image: url(assets/images/leav_mobile.png);
+    }
+
+    .footer {
+        height: 334px;
+    }
+
+    .footer-grid {
+        padding-top: 18px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55px 55px 55px 80px 70px;
+        grid-template-areas:
+            "logo"
+            "social"
+            "donate"
+            "rights"
+            "nav";
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo>.logo {
+        width: 128px;
+        height: 25px;
+        background-size: 11px 20px;
+        background-position: 72px 0;
+        border: none;
+    }
+
+    .social {
+        width: 194px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .rights {
+        margin-top: 30px;
+    }
+
+    .rights-p {
+        font-size: 15px;
+    }
+
+    .footer-nav {
+        width: 278px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
